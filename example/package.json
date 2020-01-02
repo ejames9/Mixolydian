@@ -1,0 +1,25 @@
+{
+  "name": "math.js",
+  "version": "1.0.0",
+  "description": "A class containing common math functions.",
+  "main": "Math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric James Foster",
+  "license": "ISC",
+  "dependencies": {
+    "clivi": "^0.1.2",
+    "elementsJS": "^0.9.30",
+    "valencejs": "^0.2.98"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/plugin-transform-destructuring": "^7.7.4",
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "socket.io-client": "^2.3.0",
+    "tree-shake": "^1.0.5"
+  }
+}

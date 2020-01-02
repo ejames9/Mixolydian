@@ -1,0 +1,124 @@
+
+html {
+  font-size: 16px;
+  font-family: Raleway;
+  background: #161616;
+}
+
+h1.name {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #373737;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.35rem;
+  color: #585858;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1rem;
+  color: #9a9a9a;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.mixo {
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background: black;
+  border: 1px solid #161616;
+  border-radius: 12px;
+}
+
+.calc {
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.calculator {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem;
+  background: blue;
+  border: 1px solid #161616;
+  border-radius: 10px;
+}
+
+.inputs {
+  justify-content: space-around;
+}
+
+.input {
+  background: #161616;
+  color: #9a9a9a;
+  width: 25%;
+  height: 2.5rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.input::placeholder {
+  position: relative;
+  bottom: .3rem;
+  font-size: 1.2rem;
+}
+
+.btns {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 5%;
+  padding: .5rem  1rem;
+  background: #585858;
+  color: #161616;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.add-btn {
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background: #161616;
+  color: #dedede;
+}
+
+.btn:active {
+  background: #dedede;
+  color: #161616;
+  box-shadow: 0px 0px 0px 1px #161616 inset;
+}
+
+.res {
+  display: flex;
+  justify-content: center;
+}

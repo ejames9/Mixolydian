@@ -1,0 +1,52 @@
+{
+  "name": "mixolydian",
+  "version": "0.1.0",
+  "description": "A light, fast module bundler that requires little configuration..",
+  "main": "Mixolydian.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.5",
+    "JSONStream": "^1.3.5",
+    "babelify": "^10.0.0",
+    "browser-pack": "^6.1.0",
+    "chalk": "^3.0.0",
+    "clivi": "^0.1.2",
+    "event-stream": "^4.0.1",
+    "express": "^4.17.1",
+    "minimist": "^1.2.0",
+    "module-deps": "^6.2.2",
+    "ora": "^4.0.3",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "through2": "^3.0.1",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/plugin-transform-destructuring": "^7.7.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.5",
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "@babel/preset-env": "^7.7.6"
+
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bundler",
+    "modules",
+    "hmr",
+    "babel",
+    "browser",
+    "bundle",
+    "dependencies",
+    "dependency",
+    "bundler"
+  ],
+  "author": "Eric James Foster",
+  "license": "ISC"
+}
