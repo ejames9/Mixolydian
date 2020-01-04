@@ -462,24 +462,6 @@ exports["default"] = _subtract;
 function _subtract(param1, param2) {
   return param1 - param2;
 }
-},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/src/js/Math/funcs/_divide.js":[function(require,module,exports){
-"";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = _divide;
-
-/*
-** _divide.js
-**
-** _divide.js is a function for dividing 1 number into another....
-**
-** Eric James Foster, Fostware LLC, MIT License.
-***/
-function _divide(param1, param2) {
-  return param1 / param2;
-}
 },{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/src/js/Math/funcs/_multiply.js":[function(require,module,exports){
 "";
 
@@ -497,6 +479,24 @@ exports["default"] = _multiply;
 ***/
 function _multiply(param1, param2) {
   return param1 * param2;
+}
+},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/src/js/Math/funcs/_divide.js":[function(require,module,exports){
+"";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = _divide;
+
+/*
+** _divide.js
+**
+** _divide.js is a function for dividing 1 number into another....
+**
+** Eric James Foster, Fostware LLC, MIT License.
+***/
+function _divide(param1, param2) {
+  return param1 / param2;
 }
 },{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/clivi/index.js":[function(require,module,exports){
 "";
@@ -10125,24 +10125,7 @@ exports.log = log;
 exports.mergeData = mergeData;
 exports.queryDOM = queryDOM;
 
-},{"./_rollupPluginBabelHelpers-82a4407b.js":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/valencejs/cjs/_rollupPluginBabelHelpers-82a4407b.js","clivi":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/clivi/index.js","css-tree":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/index.js","dompurify":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/dompurify/dist/purify.js","lodash/words":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/words.js","stylis":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/stylis/stylis.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_asciiWords.js":[function(require,module,exports){
-/** Used to match words composed of alphanumeric characters. */
-var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
-
-/**
- * Splits an ASCII `string` into an array of its words.
- *
- * @private
- * @param {string} The string to inspect.
- * @returns {Array} Returns the words of `string`.
- */
-function asciiWords(string) {
-  return string.match(reAsciiWord) || [];
-}
-
-module.exports = asciiWords;
-
-},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_hasUnicodeWord.js":[function(require,module,exports){
+},{"./_rollupPluginBabelHelpers-82a4407b.js":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/valencejs/cjs/_rollupPluginBabelHelpers-82a4407b.js","clivi":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/clivi/index.js","css-tree":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/index.js","dompurify":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/dompurify/dist/purify.js","lodash/words":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/words.js","stylis":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/stylis/stylis.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_hasUnicodeWord.js":[function(require,module,exports){
 /** Used to detect strings that need a more robust regexp to match words. */
 var reHasUnicodeWord = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;
 
@@ -10158,6 +10141,23 @@ function hasUnicodeWord(string) {
 }
 
 module.exports = hasUnicodeWord;
+
+},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_asciiWords.js":[function(require,module,exports){
+/** Used to match words composed of alphanumeric characters. */
+var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
+
+/**
+ * Splits an ASCII `string` into an array of its words.
+ *
+ * @private
+ * @param {string} The string to inspect.
+ * @returns {Array} Returns the words of `string`.
+ */
+function asciiWords(string) {
+  return string.match(reAsciiWord) || [];
+}
+
+module.exports = asciiWords;
 
 },{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_unicodeWords.js":[function(require,module,exports){
 /** Used to compose unicode character classes. */
@@ -12896,7 +12896,56 @@ Object.keys(utils).forEach(function(key) {
 
 module.exports = tokenize;
 
-},{"../common/TokenStream":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/common/TokenStream.js","../common/adopt-buffer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/common/adopt-buffer.js","./char-code-definitions":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/char-code-definitions.js","./const":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/const.js","./utils":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/utils.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Nth.js":[function(require,module,exports){
+},{"../common/TokenStream":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/common/TokenStream.js","../common/adopt-buffer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/common/adopt-buffer.js","./char-code-definitions":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/char-code-definitions.js","./const":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/const.js","./utils":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/utils.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_freeGlobal.js":[function(require,module,exports){
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+module.exports = freeGlobal;
+
+},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_root.js":[function(require,module,exports){
+var freeGlobal = require('./_freeGlobal');
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+module.exports = root;
+
+},{"./_freeGlobal":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_freeGlobal.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js":[function(require,module,exports){
+var root = require('./_root');
+
+/** Built-in value references. */
+var Symbol = root.Symbol;
+
+module.exports = Symbol;
+
+},{"./_root":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_root.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_objectToString.js":[function(require,module,exports){
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+function objectToString(value) {
+  return nativeObjectToString.call(value);
+}
+
+module.exports = objectToString;
+
+},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Nth.js":[function(require,module,exports){
 module.exports = {
     name: 'Nth',
     structure: {
@@ -13100,55 +13149,6 @@ module.exports = {
         );
     }
 };
-
-},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_freeGlobal.js":[function(require,module,exports){
-/** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
-
-module.exports = freeGlobal;
-
-},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_root.js":[function(require,module,exports){
-var freeGlobal = require('./_freeGlobal');
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-module.exports = root;
-
-},{"./_freeGlobal":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_freeGlobal.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js":[function(require,module,exports){
-var root = require('./_root');
-
-/** Built-in value references. */
-var Symbol = root.Symbol;
-
-module.exports = Symbol;
-
-},{"./_root":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_root.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_objectToString.js":[function(require,module,exports){
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var nativeObjectToString = objectProto.toString;
-
-/**
- * Converts `value` to a string using `Object.prototype.toString`.
- *
- * @private
- * @param {*} value The value to convert.
- * @returns {string} Returns the converted string.
- */
-function objectToString(value) {
-  return nativeObjectToString.call(value);
-}
-
-module.exports = objectToString;
 
 },{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/utils.js":[function(require,module,exports){
 var charCodeDef = require('./char-code-definitions');
@@ -15021,7 +15021,222 @@ module.exports = {
     }
 };
 
-},{"../common/List":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/common/List.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/lexer/prepare-tokens.js":[function(require,module,exports){
+},{"../common/List":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/common/List.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_getRawTag.js":[function(require,module,exports){
+var Symbol = require('./_Symbol');
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the raw `toStringTag`.
+ */
+function getRawTag(value) {
+  var isOwn = hasOwnProperty.call(value, symToStringTag),
+      tag = value[symToStringTag];
+
+  try {
+    value[symToStringTag] = undefined;
+    var unmasked = true;
+  } catch (e) {}
+
+  var result = nativeObjectToString.call(value);
+  if (unmasked) {
+    if (isOwn) {
+      value[symToStringTag] = tag;
+    } else {
+      delete value[symToStringTag];
+    }
+  }
+  return result;
+}
+
+module.exports = getRawTag;
+
+},{"./_Symbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseGetTag.js":[function(require,module,exports){
+var Symbol = require('./_Symbol'),
+    getRawTag = require('./_getRawTag'),
+    objectToString = require('./_objectToString');
+
+/** `Object#toString` result references. */
+var nullTag = '[object Null]',
+    undefinedTag = '[object Undefined]';
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * The base implementation of `getTag` without fallbacks for buggy environments.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+function baseGetTag(value) {
+  if (value == null) {
+    return value === undefined ? undefinedTag : nullTag;
+  }
+  return (symToStringTag && symToStringTag in Object(value))
+    ? getRawTag(value)
+    : objectToString(value);
+}
+
+module.exports = baseGetTag;
+
+},{"./_Symbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js","./_getRawTag":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_getRawTag.js","./_objectToString":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_objectToString.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isSymbol.js":[function(require,module,exports){
+var baseGetTag = require('./_baseGetTag'),
+    isObjectLike = require('./isObjectLike');
+
+/** `Object#toString` result references. */
+var symbolTag = '[object Symbol]';
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && baseGetTag(value) == symbolTag);
+}
+
+module.exports = isSymbol;
+
+},{"./_baseGetTag":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseGetTag.js","./isObjectLike":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isObjectLike.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseToString.js":[function(require,module,exports){
+var Symbol = require('./_Symbol'),
+    arrayMap = require('./_arrayMap'),
+    isArray = require('./isArray'),
+    isSymbol = require('./isSymbol');
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0;
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto = Symbol ? Symbol.prototype : undefined,
+    symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+/**
+ * The base implementation of `_.toString` which doesn't convert nullish
+ * values to empty strings.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */
+function baseToString(value) {
+  // Exit early for strings to avoid a performance hit in some environments.
+  if (typeof value == 'string') {
+    return value;
+  }
+  if (isArray(value)) {
+    // Recursively convert values (susceptible to call stack limits).
+    return arrayMap(value, baseToString) + '';
+  }
+  if (isSymbol(value)) {
+    return symbolToString ? symbolToString.call(value) : '';
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+}
+
+module.exports = baseToString;
+
+},{"./_Symbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js","./_arrayMap":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_arrayMap.js","./isArray":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isArray.js","./isSymbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isSymbol.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/toString.js":[function(require,module,exports){
+var baseToString = require('./_baseToString');
+
+/**
+ * Converts `value` to a string. An empty string is returned for `null`
+ * and `undefined` values. The sign of `-0` is preserved.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ * @example
+ *
+ * _.toString(null);
+ * // => ''
+ *
+ * _.toString(-0);
+ * // => '-0'
+ *
+ * _.toString([1, 2, 3]);
+ * // => '1,2,3'
+ */
+function toString(value) {
+  return value == null ? '' : baseToString(value);
+}
+
+module.exports = toString;
+
+},{"./_baseToString":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseToString.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/words.js":[function(require,module,exports){
+var asciiWords = require('./_asciiWords'),
+    hasUnicodeWord = require('./_hasUnicodeWord'),
+    toString = require('./toString'),
+    unicodeWords = require('./_unicodeWords');
+
+/**
+ * Splits `string` into an array of its words.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category String
+ * @param {string} [string=''] The string to inspect.
+ * @param {RegExp|string} [pattern] The pattern to match words.
+ * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+ * @returns {Array} Returns the words of `string`.
+ * @example
+ *
+ * _.words('fred, barney, & pebbles');
+ * // => ['fred', 'barney', 'pebbles']
+ *
+ * _.words('fred, barney, & pebbles', /[^, ]+/g);
+ * // => ['fred', 'barney', '&', 'pebbles']
+ */
+function words(string, pattern, guard) {
+  string = toString(string);
+  pattern = guard ? undefined : pattern;
+
+  if (pattern === undefined) {
+    return hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
+  }
+  return string.match(pattern) || [];
+}
+
+module.exports = words;
+
+},{"./_asciiWords":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_asciiWords.js","./_hasUnicodeWord":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_hasUnicodeWord.js","./_unicodeWords":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_unicodeWords.js","./toString":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/toString.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/lexer/prepare-tokens.js":[function(require,module,exports){
 var tokenize = require('../tokenizer');
 var TokenStream = require('../common/TokenStream');
 var tokenStream = new TokenStream();
@@ -15560,393 +15775,16 @@ module.exports = {
     walk: require('./walk')
 };
 
-},{"./SyntaxError":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/SyntaxError.js","./generate":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/generate.js","./parse":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/parse.js","./walk":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/walk.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_getRawTag.js":[function(require,module,exports){
-var Symbol = require('./_Symbol');
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var nativeObjectToString = objectProto.toString;
-
-/** Built-in value references. */
-var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
-
-/**
- * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
- *
- * @private
- * @param {*} value The value to query.
- * @returns {string} Returns the raw `toStringTag`.
- */
-function getRawTag(value) {
-  var isOwn = hasOwnProperty.call(value, symToStringTag),
-      tag = value[symToStringTag];
-
-  try {
-    value[symToStringTag] = undefined;
-    var unmasked = true;
-  } catch (e) {}
-
-  var result = nativeObjectToString.call(value);
-  if (unmasked) {
-    if (isOwn) {
-      value[symToStringTag] = tag;
-    } else {
-      delete value[symToStringTag];
-    }
-  }
-  return result;
-}
-
-module.exports = getRawTag;
-
-},{"./_Symbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseGetTag.js":[function(require,module,exports){
-var Symbol = require('./_Symbol'),
-    getRawTag = require('./_getRawTag'),
-    objectToString = require('./_objectToString');
-
-/** `Object#toString` result references. */
-var nullTag = '[object Null]',
-    undefinedTag = '[object Undefined]';
-
-/** Built-in value references. */
-var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
-
-/**
- * The base implementation of `getTag` without fallbacks for buggy environments.
- *
- * @private
- * @param {*} value The value to query.
- * @returns {string} Returns the `toStringTag`.
- */
-function baseGetTag(value) {
-  if (value == null) {
-    return value === undefined ? undefinedTag : nullTag;
-  }
-  return (symToStringTag && symToStringTag in Object(value))
-    ? getRawTag(value)
-    : objectToString(value);
-}
-
-module.exports = baseGetTag;
-
-},{"./_Symbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js","./_getRawTag":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_getRawTag.js","./_objectToString":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_objectToString.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isSymbol.js":[function(require,module,exports){
-var baseGetTag = require('./_baseGetTag'),
-    isObjectLike = require('./isObjectLike');
-
-/** `Object#toString` result references. */
-var symbolTag = '[object Symbol]';
-
-/**
- * Checks if `value` is classified as a `Symbol` primitive or object.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
- * @example
- *
- * _.isSymbol(Symbol.iterator);
- * // => true
- *
- * _.isSymbol('abc');
- * // => false
- */
-function isSymbol(value) {
-  return typeof value == 'symbol' ||
-    (isObjectLike(value) && baseGetTag(value) == symbolTag);
-}
-
-module.exports = isSymbol;
-
-},{"./_baseGetTag":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseGetTag.js","./isObjectLike":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isObjectLike.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseToString.js":[function(require,module,exports){
-var Symbol = require('./_Symbol'),
-    arrayMap = require('./_arrayMap'),
-    isArray = require('./isArray'),
-    isSymbol = require('./isSymbol');
-
-/** Used as references for various `Number` constants. */
-var INFINITY = 1 / 0;
-
-/** Used to convert symbols to primitives and strings. */
-var symbolProto = Symbol ? Symbol.prototype : undefined,
-    symbolToString = symbolProto ? symbolProto.toString : undefined;
-
-/**
- * The base implementation of `_.toString` which doesn't convert nullish
- * values to empty strings.
- *
- * @private
- * @param {*} value The value to process.
- * @returns {string} Returns the string.
- */
-function baseToString(value) {
-  // Exit early for strings to avoid a performance hit in some environments.
-  if (typeof value == 'string') {
-    return value;
-  }
-  if (isArray(value)) {
-    // Recursively convert values (susceptible to call stack limits).
-    return arrayMap(value, baseToString) + '';
-  }
-  if (isSymbol(value)) {
-    return symbolToString ? symbolToString.call(value) : '';
-  }
-  var result = (value + '');
-  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
-}
-
-module.exports = baseToString;
-
-},{"./_Symbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_Symbol.js","./_arrayMap":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_arrayMap.js","./isArray":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isArray.js","./isSymbol":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/isSymbol.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/toString.js":[function(require,module,exports){
-var baseToString = require('./_baseToString');
-
-/**
- * Converts `value` to a string. An empty string is returned for `null`
- * and `undefined` values. The sign of `-0` is preserved.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to convert.
- * @returns {string} Returns the converted string.
- * @example
- *
- * _.toString(null);
- * // => ''
- *
- * _.toString(-0);
- * // => '-0'
- *
- * _.toString([1, 2, 3]);
- * // => '1,2,3'
- */
-function toString(value) {
-  return value == null ? '' : baseToString(value);
-}
-
-module.exports = toString;
-
-},{"./_baseToString":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_baseToString.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/words.js":[function(require,module,exports){
-var asciiWords = require('./_asciiWords'),
-    hasUnicodeWord = require('./_hasUnicodeWord'),
-    toString = require('./toString'),
-    unicodeWords = require('./_unicodeWords');
-
-/**
- * Splits `string` into an array of its words.
- *
- * @static
- * @memberOf _
- * @since 3.0.0
- * @category String
- * @param {string} [string=''] The string to inspect.
- * @param {RegExp|string} [pattern] The pattern to match words.
- * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
- * @returns {Array} Returns the words of `string`.
- * @example
- *
- * _.words('fred, barney, & pebbles');
- * // => ['fred', 'barney', 'pebbles']
- *
- * _.words('fred, barney, & pebbles', /[^, ]+/g);
- * // => ['fred', 'barney', '&', 'pebbles']
- */
-function words(string, pattern, guard) {
-  string = toString(string);
-  pattern = guard ? undefined : pattern;
-
-  if (pattern === undefined) {
-    return hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
-  }
-  return string.match(pattern) || [];
-}
-
-module.exports = words;
-
-},{"./_asciiWords":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_asciiWords.js","./_hasUnicodeWord":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_hasUnicodeWord.js","./_unicodeWords":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/_unicodeWords.js","./toString":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/lodash/toString.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/not.js":[function(require,module,exports){
+},{"./SyntaxError":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/SyntaxError.js","./generate":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/generate.js","./parse":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/parse.js","./walk":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/walk.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/not.js":[function(require,module,exports){
 module.exports = require('./common/selectorList');
 
-},{"./common/selectorList":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/selectorList.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-child.js":[function(require,module,exports){
+},{"./common/selectorList":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/selectorList.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-child.js":[function(require,module,exports){
 module.exports = require('./common/nthWithOfClause');
 
 },{"./common/nthWithOfClause":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nthWithOfClause.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-of-type.js":[function(require,module,exports){
 module.exports = require('./common/nth');
 
-},{"./common/nth":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nth.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Atrule.js":[function(require,module,exports){
-var TYPE = require('../../tokenizer').TYPE;
-var rawMode = require('./Raw').mode;
-
-var ATKEYWORD = TYPE.AtKeyword;
-var SEMICOLON = TYPE.Semicolon;
-var LEFTCURLYBRACKET = TYPE.LeftCurlyBracket;
-var RIGHTCURLYBRACKET = TYPE.RightCurlyBracket;
-
-function consumeRaw(startToken) {
-    return this.Raw(startToken, rawMode.leftCurlyBracketOrSemicolon, true);
-}
-
-function isDeclarationBlockAtrule() {
-    for (var offset = 1, type; type = this.scanner.lookupType(offset); offset++) {
-        if (type === RIGHTCURLYBRACKET) {
-            return true;
-        }
-
-        if (type === LEFTCURLYBRACKET ||
-            type === ATKEYWORD) {
-            return false;
-        }
-    }
-
-    return false;
-}
-
-module.exports = {
-    name: 'Atrule',
-    structure: {
-        name: String,
-        prelude: ['AtrulePrelude', 'Raw', null],
-        block: ['Block', null]
-    },
-    parse: function() {
-        var start = this.scanner.tokenStart;
-        var name;
-        var nameLowerCase;
-        var prelude = null;
-        var block = null;
-
-        this.eat(ATKEYWORD);
-
-        name = this.scanner.substrToCursor(start + 1);
-        nameLowerCase = name.toLowerCase();
-        this.scanner.skipSC();
-
-        // parse prelude
-        if (this.scanner.eof === false &&
-            this.scanner.tokenType !== LEFTCURLYBRACKET &&
-            this.scanner.tokenType !== SEMICOLON) {
-            if (this.parseAtrulePrelude) {
-                prelude = this.parseWithFallback(this.AtrulePrelude.bind(this, name), consumeRaw);
-
-                // turn empty AtrulePrelude into null
-                if (prelude.type === 'AtrulePrelude' && prelude.children.head === null) {
-                    prelude = null;
-                }
-            } else {
-                prelude = consumeRaw.call(this, this.scanner.tokenIndex);
-            }
-
-            this.scanner.skipSC();
-        }
-
-        switch (this.scanner.tokenType) {
-            case SEMICOLON:
-                this.scanner.next();
-                break;
-
-            case LEFTCURLYBRACKET:
-                if (this.atrule.hasOwnProperty(nameLowerCase) &&
-                    typeof this.atrule[nameLowerCase].block === 'function') {
-                    block = this.atrule[nameLowerCase].block.call(this);
-                } else {
-                    // TODO: should consume block content as Raw?
-                    block = this.Block(isDeclarationBlockAtrule.call(this));
-                }
-
-                break;
-        }
-
-        return {
-            type: 'Atrule',
-            loc: this.getLocation(start, this.scanner.tokenStart),
-            name: name,
-            prelude: prelude,
-            block: block
-        };
-    },
-    generate: function(node) {
-        this.chunk('@');
-        this.chunk(node.name);
-
-        if (node.prelude !== null) {
-            this.chunk(' ');
-            this.node(node.prelude);
-        }
-
-        if (node.block) {
-            this.node(node.block);
-        } else {
-            this.chunk(';');
-        }
-    },
-    walkContext: 'atrule'
-};
-
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js","./Raw":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Raw.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/AtrulePrelude.js":[function(require,module,exports){
-var TYPE = require('../../tokenizer').TYPE;
-
-var SEMICOLON = TYPE.Semicolon;
-var LEFTCURLYBRACKET = TYPE.LeftCurlyBracket;
-
-module.exports = {
-    name: 'AtrulePrelude',
-    structure: {
-        children: [[]]
-    },
-    parse: function(name) {
-        var children = null;
-
-        if (name !== null) {
-            name = name.toLowerCase();
-        }
-
-        this.scanner.skipSC();
-
-        if (this.atrule.hasOwnProperty(name) &&
-            typeof this.atrule[name].prelude === 'function') {
-            // custom consumer
-            children = this.atrule[name].prelude.call(this);
-        } else {
-            // default consumer
-            children = this.readSequence(this.scope.AtrulePrelude);
-        }
-
-        this.scanner.skipSC();
-
-        if (this.scanner.eof !== true &&
-            this.scanner.tokenType !== LEFTCURLYBRACKET &&
-            this.scanner.tokenType !== SEMICOLON) {
-            this.error('Semicolon or block is expected');
-        }
-
-        if (children === null) {
-            children = this.createList();
-        }
-
-        return {
-            type: 'AtrulePrelude',
-            loc: this.getLocationFromList(children),
-            children: children
-        };
-    },
-    generate: function(node) {
-        this.children(node);
-    },
-    walkContext: 'atrulePrelude'
-};
-
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/AnPlusB.js":[function(require,module,exports){
+},{"./common/nth":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nth.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/AnPlusB.js":[function(require,module,exports){
 var cmpChar = require('../../tokenizer').cmpChar;
 var isDigit = require('../../tokenizer').isDigit;
 var TYPE = require('../../tokenizer').TYPE;
@@ -16243,6 +16081,168 @@ module.exports = {
             this.chunk(String(node.b));
         }
     }
+};
+
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Atrule.js":[function(require,module,exports){
+var TYPE = require('../../tokenizer').TYPE;
+var rawMode = require('./Raw').mode;
+
+var ATKEYWORD = TYPE.AtKeyword;
+var SEMICOLON = TYPE.Semicolon;
+var LEFTCURLYBRACKET = TYPE.LeftCurlyBracket;
+var RIGHTCURLYBRACKET = TYPE.RightCurlyBracket;
+
+function consumeRaw(startToken) {
+    return this.Raw(startToken, rawMode.leftCurlyBracketOrSemicolon, true);
+}
+
+function isDeclarationBlockAtrule() {
+    for (var offset = 1, type; type = this.scanner.lookupType(offset); offset++) {
+        if (type === RIGHTCURLYBRACKET) {
+            return true;
+        }
+
+        if (type === LEFTCURLYBRACKET ||
+            type === ATKEYWORD) {
+            return false;
+        }
+    }
+
+    return false;
+}
+
+module.exports = {
+    name: 'Atrule',
+    structure: {
+        name: String,
+        prelude: ['AtrulePrelude', 'Raw', null],
+        block: ['Block', null]
+    },
+    parse: function() {
+        var start = this.scanner.tokenStart;
+        var name;
+        var nameLowerCase;
+        var prelude = null;
+        var block = null;
+
+        this.eat(ATKEYWORD);
+
+        name = this.scanner.substrToCursor(start + 1);
+        nameLowerCase = name.toLowerCase();
+        this.scanner.skipSC();
+
+        // parse prelude
+        if (this.scanner.eof === false &&
+            this.scanner.tokenType !== LEFTCURLYBRACKET &&
+            this.scanner.tokenType !== SEMICOLON) {
+            if (this.parseAtrulePrelude) {
+                prelude = this.parseWithFallback(this.AtrulePrelude.bind(this, name), consumeRaw);
+
+                // turn empty AtrulePrelude into null
+                if (prelude.type === 'AtrulePrelude' && prelude.children.head === null) {
+                    prelude = null;
+                }
+            } else {
+                prelude = consumeRaw.call(this, this.scanner.tokenIndex);
+            }
+
+            this.scanner.skipSC();
+        }
+
+        switch (this.scanner.tokenType) {
+            case SEMICOLON:
+                this.scanner.next();
+                break;
+
+            case LEFTCURLYBRACKET:
+                if (this.atrule.hasOwnProperty(nameLowerCase) &&
+                    typeof this.atrule[nameLowerCase].block === 'function') {
+                    block = this.atrule[nameLowerCase].block.call(this);
+                } else {
+                    // TODO: should consume block content as Raw?
+                    block = this.Block(isDeclarationBlockAtrule.call(this));
+                }
+
+                break;
+        }
+
+        return {
+            type: 'Atrule',
+            loc: this.getLocation(start, this.scanner.tokenStart),
+            name: name,
+            prelude: prelude,
+            block: block
+        };
+    },
+    generate: function(node) {
+        this.chunk('@');
+        this.chunk(node.name);
+
+        if (node.prelude !== null) {
+            this.chunk(' ');
+            this.node(node.prelude);
+        }
+
+        if (node.block) {
+            this.node(node.block);
+        } else {
+            this.chunk(';');
+        }
+    },
+    walkContext: 'atrule'
+};
+
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js","./Raw":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Raw.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/AtrulePrelude.js":[function(require,module,exports){
+var TYPE = require('../../tokenizer').TYPE;
+
+var SEMICOLON = TYPE.Semicolon;
+var LEFTCURLYBRACKET = TYPE.LeftCurlyBracket;
+
+module.exports = {
+    name: 'AtrulePrelude',
+    structure: {
+        children: [[]]
+    },
+    parse: function(name) {
+        var children = null;
+
+        if (name !== null) {
+            name = name.toLowerCase();
+        }
+
+        this.scanner.skipSC();
+
+        if (this.atrule.hasOwnProperty(name) &&
+            typeof this.atrule[name].prelude === 'function') {
+            // custom consumer
+            children = this.atrule[name].prelude.call(this);
+        } else {
+            // default consumer
+            children = this.readSequence(this.scope.AtrulePrelude);
+        }
+
+        this.scanner.skipSC();
+
+        if (this.scanner.eof !== true &&
+            this.scanner.tokenType !== LEFTCURLYBRACKET &&
+            this.scanner.tokenType !== SEMICOLON) {
+            this.error('Semicolon or block is expected');
+        }
+
+        if (children === null) {
+            children = this.createList();
+        }
+
+        return {
+            type: 'AtrulePrelude',
+            loc: this.getLocationFromList(children),
+            children: children
+        };
+    },
+    generate: function(node) {
+        this.children(node);
+    },
+    walkContext: 'atrulePrelude'
 };
 
 },{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/AttributeSelector.js":[function(require,module,exports){
@@ -17273,36 +17273,7 @@ module.exports = {
     }
 };
 
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Percentage.js":[function(require,module,exports){
-var consumeNumber = require('../../tokenizer/utils').consumeNumber;
-var TYPE = require('../../tokenizer').TYPE;
-
-var PERCENTAGE = TYPE.Percentage;
-
-module.exports = {
-    name: 'Percentage',
-    structure: {
-        value: String
-    },
-    parse: function() {
-        var start = this.scanner.tokenStart;
-        var numberEnd = consumeNumber(this.scanner.source, start);
-
-        this.eat(PERCENTAGE);
-
-        return {
-            type: 'Percentage',
-            loc: this.getLocation(start, this.scanner.tokenStart),
-            value: this.scanner.source.substring(start, numberEnd)
-        };
-    },
-    generate: function(node) {
-        this.chunk(node.value);
-        this.chunk('%');
-    }
-};
-
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js","../../tokenizer/utils":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/utils.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Parentheses.js":[function(require,module,exports){
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Parentheses.js":[function(require,module,exports){
 var TYPE = require('../../tokenizer').TYPE;
 
 var LEFTPARENTHESIS = TYPE.LeftParenthesis;
@@ -17338,7 +17309,36 @@ module.exports = {
     }
 };
 
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/PseudoClassSelector.js":[function(require,module,exports){
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Percentage.js":[function(require,module,exports){
+var consumeNumber = require('../../tokenizer/utils').consumeNumber;
+var TYPE = require('../../tokenizer').TYPE;
+
+var PERCENTAGE = TYPE.Percentage;
+
+module.exports = {
+    name: 'Percentage',
+    structure: {
+        value: String
+    },
+    parse: function() {
+        var start = this.scanner.tokenStart;
+        var numberEnd = consumeNumber(this.scanner.source, start);
+
+        this.eat(PERCENTAGE);
+
+        return {
+            type: 'Percentage',
+            loc: this.getLocation(start, this.scanner.tokenStart),
+            value: this.scanner.source.substring(start, numberEnd)
+        };
+    },
+    generate: function(node) {
+        this.chunk(node.value);
+        this.chunk('%');
+    }
+};
+
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js","../../tokenizer/utils":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/utils.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/PseudoClassSelector.js":[function(require,module,exports){
 var TYPE = require('../../tokenizer').TYPE;
 
 var IDENT = TYPE.Ident;
@@ -17533,7 +17533,63 @@ module.exports = {
     }
 };
 
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Raw.js":[function(require,module,exports){
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Rule.js":[function(require,module,exports){
+var TYPE = require('../../tokenizer').TYPE;
+var rawMode = require('./Raw').mode;
+
+var LEFTCURLYBRACKET = TYPE.LeftCurlyBracket;
+
+function consumeRaw(startToken) {
+    return this.Raw(startToken, rawMode.leftCurlyBracket, true);
+}
+
+function consumePrelude() {
+    var prelude = this.SelectorList();
+
+    if (prelude.type !== 'Raw' &&
+        this.scanner.eof === false &&
+        this.scanner.tokenType !== LEFTCURLYBRACKET) {
+        this.error();
+    }
+
+    return prelude;
+}
+
+module.exports = {
+    name: 'Rule',
+    structure: {
+        prelude: ['SelectorList', 'Raw'],
+        block: ['Block']
+    },
+    parse: function() {
+        var startToken = this.scanner.tokenIndex;
+        var startOffset = this.scanner.tokenStart;
+        var prelude;
+        var block;
+
+        if (this.parseRulePrelude) {
+            prelude = this.parseWithFallback(consumePrelude, consumeRaw);
+        } else {
+            prelude = consumeRaw.call(this, startToken);
+        }
+
+        block = this.Block(true);
+
+        return {
+            type: 'Rule',
+            loc: this.getLocation(startOffset, this.scanner.tokenStart),
+            prelude: prelude,
+            block: block
+        };
+    },
+    generate: function(node) {
+        this.node(node.prelude);
+        this.node(node.block);
+    },
+    walkContext: 'rule'
+};
+
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js","./Raw":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Raw.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Raw.js":[function(require,module,exports){
 var tokenizer = require('../../tokenizer');
 var TYPE = tokenizer.TYPE;
 
@@ -17622,63 +17678,7 @@ module.exports = {
     }
 };
 
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Rule.js":[function(require,module,exports){
-var TYPE = require('../../tokenizer').TYPE;
-var rawMode = require('./Raw').mode;
-
-var LEFTCURLYBRACKET = TYPE.LeftCurlyBracket;
-
-function consumeRaw(startToken) {
-    return this.Raw(startToken, rawMode.leftCurlyBracket, true);
-}
-
-function consumePrelude() {
-    var prelude = this.SelectorList();
-
-    if (prelude.type !== 'Raw' &&
-        this.scanner.eof === false &&
-        this.scanner.tokenType !== LEFTCURLYBRACKET) {
-        this.error();
-    }
-
-    return prelude;
-}
-
-module.exports = {
-    name: 'Rule',
-    structure: {
-        prelude: ['SelectorList', 'Raw'],
-        block: ['Block']
-    },
-    parse: function() {
-        var startToken = this.scanner.tokenIndex;
-        var startOffset = this.scanner.tokenStart;
-        var prelude;
-        var block;
-
-        if (this.parseRulePrelude) {
-            prelude = this.parseWithFallback(consumePrelude, consumeRaw);
-        } else {
-            prelude = consumeRaw.call(this, startToken);
-        }
-
-        block = this.Block(true);
-
-        return {
-            type: 'Rule',
-            loc: this.getLocation(startOffset, this.scanner.tokenStart),
-            prelude: prelude,
-            block: block
-        };
-    },
-    generate: function(node) {
-        this.node(node.prelude);
-        this.node(node.block);
-    },
-    walkContext: 'rule'
-};
-
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js","./Raw":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/Raw.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/SelectorList.js":[function(require,module,exports){
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/node/SelectorList.js":[function(require,module,exports){
 var TYPE = require('../../tokenizer').TYPE;
 
 var COMMA = TYPE.Comma;
@@ -18354,61 +18354,7 @@ module.exports = {
     }
 };
 
-},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/selectorList.js":[function(require,module,exports){
-module.exports = {
-    parse: function selectorList() {
-        return this.createSingleNodeList(
-            this.SelectorList()
-        );
-    }
-};
-
-},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/matches.js":[function(require,module,exports){
-module.exports = require('./common/selectorList');
-
-},{"./common/selectorList":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/selectorList.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nth.js":[function(require,module,exports){
-var DISALLOW_OF_CLAUSE = false;
-
-module.exports = {
-    parse: function nth() {
-        return this.createSingleNodeList(
-            this.Nth(DISALLOW_OF_CLAUSE)
-        );
-    }
-};
-
-},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-of-type.js":[function(require,module,exports){
-module.exports = require('./common/nth');
-
-},{"./common/nth":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nth.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nthWithOfClause.js":[function(require,module,exports){
-var ALLOW_OF_CLAUSE = true;
-
-module.exports = {
-    parse: function nthWithOfClause() {
-        return this.createSingleNodeList(
-            this.Nth(ALLOW_OF_CLAUSE)
-        );
-    }
-};
-
-},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-child.js":[function(require,module,exports){
-module.exports = require('./common/nthWithOfClause');
-
-},{"./common/nthWithOfClause":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nthWithOfClause.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/index.js":[function(require,module,exports){
-module.exports = {
-    'dir': require('./dir'),
-    'has': require('./has'),
-    'lang': require('./lang'),
-    'matches': require('./matches'),
-    'not': require('./not'),
-    'nth-child': require('./nth-child'),
-    'nth-last-child': require('./nth-last-child'),
-    'nth-last-of-type': require('./nth-last-of-type'),
-    'nth-of-type': require('./nth-of-type'),
-    'slotted': require('./slotted')
-};
-
-},{"./dir":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/dir.js","./has":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/has.js","./lang":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/lang.js","./matches":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/matches.js","./not":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/not.js","./nth-child":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-child.js","./nth-last-child":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-child.js","./nth-last-of-type":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-of-type.js","./nth-of-type":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-of-type.js","./slotted":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/slotted.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/supports.js":[function(require,module,exports){
+},{"../../tokenizer":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/tokenizer/index.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/supports.js":[function(require,module,exports){
 var TYPE = require('../../tokenizer').TYPE;
 
 var WHITESPACE = TYPE.WhiteSpace;
@@ -18508,7 +18454,61 @@ module.exports = {
     'supports': require('./supports')
 };
 
-},{"./font-face":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/font-face.js","./import":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/import.js","./media":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/media.js","./page":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/page.js","./supports":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/supports.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/tokenizer.js":[function(require,module,exports){
+},{"./font-face":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/font-face.js","./import":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/import.js","./media":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/media.js","./page":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/page.js","./supports":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/atrule/supports.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/selectorList.js":[function(require,module,exports){
+module.exports = {
+    parse: function selectorList() {
+        return this.createSingleNodeList(
+            this.SelectorList()
+        );
+    }
+};
+
+},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/matches.js":[function(require,module,exports){
+module.exports = require('./common/selectorList');
+
+},{"./common/selectorList":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/selectorList.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nthWithOfClause.js":[function(require,module,exports){
+var ALLOW_OF_CLAUSE = true;
+
+module.exports = {
+    parse: function nthWithOfClause() {
+        return this.createSingleNodeList(
+            this.Nth(ALLOW_OF_CLAUSE)
+        );
+    }
+};
+
+},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-child.js":[function(require,module,exports){
+module.exports = require('./common/nthWithOfClause');
+
+},{"./common/nthWithOfClause":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nthWithOfClause.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nth.js":[function(require,module,exports){
+var DISALLOW_OF_CLAUSE = false;
+
+module.exports = {
+    parse: function nth() {
+        return this.createSingleNodeList(
+            this.Nth(DISALLOW_OF_CLAUSE)
+        );
+    }
+};
+
+},{}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-of-type.js":[function(require,module,exports){
+module.exports = require('./common/nth');
+
+},{"./common/nth":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/common/nth.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/index.js":[function(require,module,exports){
+module.exports = {
+    'dir': require('./dir'),
+    'has': require('./has'),
+    'lang': require('./lang'),
+    'matches': require('./matches'),
+    'not': require('./not'),
+    'nth-child': require('./nth-child'),
+    'nth-last-child': require('./nth-last-child'),
+    'nth-last-of-type': require('./nth-last-of-type'),
+    'nth-of-type': require('./nth-of-type'),
+    'slotted': require('./slotted')
+};
+
+},{"./dir":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/dir.js","./has":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/has.js","./lang":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/lang.js","./matches":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/matches.js","./not":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/not.js","./nth-child":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-child.js","./nth-last-child":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-child.js","./nth-last-of-type":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-last-of-type.js","./nth-of-type":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/nth-of-type.js","./slotted":"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/syntax/pseudo/slotted.js"}],"/Users/ericfoster/Documents/Developer/Javascript/mixolydian/example/node_modules/css-tree/lib/definition-syntax/tokenizer.js":[function(require,module,exports){
 var SyntaxError = require('./SyntaxError');
 
 var TAB = 9;
@@ -22783,7 +22783,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  width: 100%;\n  margin-top: 3rem;\n  justify-content: center;\n\n  .calculator {\n    display: flex;\n    width: 35%;\n    flex-direction: column;\n    padding: 2.5rem 1.5rem;\n    background: blue;\n    border: 1px solid #161616;\n    border-radius: 10px;\n\n    .inputs {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n\n      .input {\n        background: #161616;\n        color: #9a9a9a;\n        width: 25%;\n        height: 2.5rem;\n        font-size: 1.8rem;\n        border: none;\n        border-radius: 8px;\n        text-align: center;\n      }\n\n      /* .input::placeholder {\n        position: relative;\n        bottom: .3rem;\n        font-size: 1.2rem;\n      } */\n    }\n\n    .btns {\n      display: flex;\n      width: 100%;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      margin-top: 1.3rem;\n      margin-bottom: 1.3rem;\n\n      .btn {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        max-height: 5%;\n        padding: .5rem  1rem;\n        background: #585858;\n        color: #161616;\n        margin-bottom: 5px;\n        border-radius: 5px;\n        font-size: 1.8rem;\n        cursor: pointer;\n\n        &:hover {\n          background: #161616;\n          color: #dedede;\n        }\n\n        &:active {\n          background: #dedede;\n          color: #161616;\n          box-shadow: 0px 0px 0px 1px #161616 inset;\n        }\n      }\n\n      .add-btn {\n        font-size: 2rem;\n      }\n    }\n\n    .res {\n      display: flex;\n      width: 100%;\n      justify-content: center;\n\n      .input {\n        background: #161616;\n        color: #9a9a9a;\n        width: 25%;\n        height: 2.5rem;\n        font-size: 1.8rem;\n        border: none;\n        border-radius: 8px;\n        text-align: center;\n      }\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  width: 100%;\n  margin-top: 3rem;\n  justify-content: center;\n\n  .calculator {\n    display: flex;\n    width: 35%;\n    flex-direction: column;\n    padding: 2.5rem 1.5rem;\n    background: green;\n    border: 1px solid #161616;\n    border-radius: 10px;\n\n    .inputs {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n\n      .input {\n        background: #161616;\n        color: #9a9a9a;\n        width: 25%;\n        height: 2.5rem;\n        font-size: 1.8rem;\n        border: none;\n        border-radius: 8px;\n        text-align: center;\n      }\n\n      /* .input::placeholder {\n        position: relative;\n        bottom: .3rem;\n        font-size: 1.2rem;\n      } */\n    }\n\n    .btns {\n      display: flex;\n      width: 100%;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      margin-top: 1.3rem;\n      margin-bottom: 1.3rem;\n\n      .btn {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        max-height: 5%;\n        padding: .5rem  1rem;\n        background: #585858;\n        color: #161616;\n        margin-bottom: 5px;\n        border-radius: 5px;\n        font-size: 1.8rem;\n        cursor: pointer;\n\n        &:hover {\n          background: #161616;\n          color: #dedede;\n        }\n\n        &:active {\n          background: #dedede;\n          color: #161616;\n          box-shadow: 0px 0px 0px 1px #161616 inset;\n        }\n      }\n\n      .add-btn {\n        font-size: 2rem;\n      }\n    }\n\n    .res {\n      display: flex;\n      width: 100%;\n      justify-content: center;\n\n      .input {\n        background: #161616;\n        color: #9a9a9a;\n        width: 25%;\n        height: 2.5rem;\n        font-size: 1.8rem;\n        border: none;\n        border-radius: 8px;\n        text-align: center;\n      }\n    }\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -22979,17 +22979,17 @@ document.addEventListener('clientSocketsLoaded', function() {
 
 // listen for 'file-change' message
   socket.on('file-change', function(msg) {
-    console.log('File changed: ' + msg.id);
+    console.log('File changed: ' + msg.file);
 // Define js and css filename reg exp's so that we may know which has changed.....
     let jsRE = /[\w_$-]+\.(js|jsx|ts)/,
     cssRE = /[\w_$-]+\.(css|scss|sass|less)/,
-    fileName = msg.id
+    file = msg.file
 
-    if (jsRE.test(fileName)) {
+    if (jsRE.test(file)) {
       // console.log('JSRE');console.log(jsRE.test(fileName));
 // Call the downloadUpdate function to get HMR started.....
-      downloadUpdate(fileName)
-    } else if (cssRE.test(fileName)) {
+      downloadUpdate(file)
+    } else if (cssRE.test(file)) {
       // console.log('CSSRE');console.log(cssRE.test(fileName));
 // reload the browser to get the latest changes
       window.location.reload()
@@ -22999,12 +22999,12 @@ document.addEventListener('clientSocketsLoaded', function() {
 // Function, Creates a script tag who's src attribute points to our express
 // /hot-module endpoint. This will download our current updated module into
 // the page.....
-  function downloadUpdate(id) {
+  function downloadUpdate(file) {
 // Get the updated module and load it into a script tag.....
     let hotMod = document.createElement('script')
         hotMod.charset = 'utf8'
         hotMod.type = 'text/javascript'
-        hotMod.src = `/hot-module?id=${id}`
+        hotMod.src = `/hot-module?file=${file}`
 
 // Append module to head of document....
     document.head.append(hotMod)

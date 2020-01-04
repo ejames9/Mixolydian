@@ -14,6 +14,7 @@ import _multiply from './funcs/_multiply'
 
 import {log} from './utils/loggers'
 
+
 // var _add = require('./src/js/funcs/_add')
 // var _subtract = require('./src/js/funcs/_subtract')
 // var _divide = require('./src/js/funcs/_divide')

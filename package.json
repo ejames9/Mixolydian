@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "A light, fast module bundler that requires little configuration..",
   "main": "Mixolydian.js",
+  "files": [
+    "Mixolydian.js",
+    "lib/*",
+    "bin/*"
+  ],
+  "bin": {
+    "mixolydian": "bin/mixolydian"
+  },
   "directories": {
     "example": "example",
     "lib": "lib"
@@ -31,8 +39,7 @@
     "@babel/preset-env": "^7.7.6"
 
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

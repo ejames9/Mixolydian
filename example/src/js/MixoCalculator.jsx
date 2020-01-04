@@ -87,7 +87,7 @@ let CalcStyler =()=> styled.div`
     width: 35%;
     flex-direction: column;
     padding: 2.5rem 1.5rem;
-    background: blue;
+    background: green;
     border: 1px solid #161616;
     border-radius: 10px;
 
